@@ -4,9 +4,6 @@
  * 
  * 
  */
-
-
-
 function hello(name: string) {
     console.log(`hello , ${name}`);
 }
@@ -31,20 +28,20 @@ let body = new Body();
 console.log(`ineter = ${Object.keys(person).length}`);
 console.log(`class = ${Object.keys(body).length}`);
 
-const constType = 123;
+// const constType = 123;
 
-/**let 与 var 的区别 */
-for (var i = 0; i < 100; i++) {
-    setTimeout(() => {
-        console.log("喜刷刷",i);
-    }, 100*i);
-}
+// /**let 与 var 的区别 */
+// for (var i = 0; i < 100; i++) {
+//     setTimeout(() => {
+//         console.log("喜刷刷",i);
+//     }, 100*i);
+// }
 
-for (let i = 0; i < 100; i++) {
-    setTimeout(() => {
-        console.log("喜刷刷",i);
-    }, 100*i);
-}
+// for (let i = 0; i < 100; i++) {
+//     setTimeout(() => {
+//         console.log("喜刷刷",i);
+//     }, 100*i);
+// }
 
 
 // try {
@@ -151,3 +148,6 @@ for (let i = 0; i < 100; i++) {
 // }else{
 //     console.log("456")
 // }
+
+
+console.log('\\');

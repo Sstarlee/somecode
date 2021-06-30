@@ -19,14 +19,14 @@ var __importStar = (this && this.__importStar) || function (mod) {
     return result;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var http = __importStar(require("http"));
-var options = {
+const http = __importStar(require("http"));
+let options = {
     host: 'www.baidu.com',
     port: 80,
     path: '/upload',
     method: 'POST'
 };
-var req = http.request(options, function (res) {
+let req = http.request(options, function (res) {
     console.log('STATUS: ' + res.statusCode);
     console.log('HEADERS: ' + JSON.stringify(res.headers));
     res.setEncoding('utf8');

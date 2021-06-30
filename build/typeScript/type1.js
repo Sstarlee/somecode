@@ -6,34 +6,30 @@
  *
  */
 function hello(name) {
-    console.log("hello , " + name);
+    console.log(`hello , ${name}`);
 }
 hello("lxx");
-var Body = /** @class */ (function () {
-    function Body() {
+class Body {
+    constructor() {
         this.bodyName = "lxx";
     }
-    return Body;
-}());
-var person = { personName: "lxx" };
-var body = new Body();
-console.log("ineter = " + Object.keys(person).length);
-console.log("class = " + Object.keys(body).length);
-var constType = 123;
-/**let 与 var 的区别 */
-for (var i = 0; i < 100; i++) {
-    setTimeout(function () {
-        console.log("喜刷刷", i);
-    }, 100 * i);
 }
-var _loop_1 = function (i_1) {
-    setTimeout(function () {
-        console.log("喜刷刷", i_1);
-    }, 100 * i_1);
-};
-for (var i_1 = 0; i_1 < 100; i_1++) {
-    _loop_1(i_1);
-}
+let person = { personName: "lxx" };
+let body = new Body();
+console.log(`ineter = ${Object.keys(person).length}`);
+console.log(`class = ${Object.keys(body).length}`);
+// const constType = 123;
+// /**let 与 var 的区别 */
+// for (var i = 0; i < 100; i++) {
+//     setTimeout(() => {
+//         console.log("喜刷刷",i);
+//     }, 100*i);
+// }
+// for (let i = 0; i < 100; i++) {
+//     setTimeout(() => {
+//         console.log("喜刷刷",i);
+//     }, 100*i);
+// }
 // try {
 //     throw "oh no!";
 // }
@@ -116,4 +112,5 @@ for (var i_1 = 0; i_1 < 100; i_1++) {
 // }else{
 //     console.log("456")
 // }
+console.log('\\');
 //# sourceMappingURL=type1.js.map
